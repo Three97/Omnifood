@@ -16,6 +16,12 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix { 
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* -------------------------------------------------- */
 /* RESUABLE COMPONENTS */
 /* -------------------------------------------------- */
@@ -76,6 +82,10 @@ h3 {
   margin-right: 15%;
 }
 
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
 .box {
   padding: 1%;
 }
@@ -93,9 +103,37 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* -------------------------------------------------- */
+.icon-small {
+  color: #e67e22;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  font-size: 120%;
+  margin-right: 10px;
+  
+  /* secrets to align text and icons*/
+  margin-top: -4px;
+  line-height: 120%;
+  vertical-align: middle;
+}
+
+/* LINKS */
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+
 /* BUTTONS */
-/* -------------------------------------------------- */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -144,6 +182,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -191,6 +230,10 @@ header {
 /* -------------------------------------------------- */
 /* MEALS */
 /* -------------------------------------------------- */
+.section-meals {
+  padding: 0;
+}
+
 .meals-showcase {
   list-style: none;
   width: 100%;
@@ -205,9 +248,181 @@ header {
 .meal-photo {
   width: 100%;
   margin: 0;
+  overflow: hidden;
+  background-color: #000;
 }
 
 .meal-photo img {
   width: 100%;
+  opacity: 0.7;
   height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
 }
+
+.meal-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+/* -------------------------------------------------- */
+/* HOW IT WORKS */
+/* -------------------------------------------------- */
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width:40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  font-size: 150%;
+  float: left;
+  padding: 5px;
+  margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* -------------------------------------------------- */
+/* CITIES SECTION */
+/* -------------------------------------------------- */
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+/* -------------------------------------------------- */
+/* CUSTOMER TESTIMONIAL SECTION */
+/* -------------------------------------------------- */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0.8)), url('img/back-customers.jpg');
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.section-testimonials blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.section-testimonials blockquote cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+.section-testimonials blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+
+.section-testimonials blockquote cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* -------------------------------------------------- */
+/* SIGNUP SECTION */
+/* -------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
