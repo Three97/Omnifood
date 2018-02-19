@@ -111,7 +111,7 @@ h3 {
   font-size: 120%;
   margin-right: 10px;
   
-  /* secrets to align text and icons*/
+  /* secret to align text and icons*/
   margin-top: -4px;
   line-height: 120%;
   vertical-align: middle;
@@ -135,7 +135,8 @@ a:active {
 
 /* BUTTONS */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -145,7 +146,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
@@ -159,12 +161,16 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: #cf6d17;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   border: 1px solid #cf6d17;
 }
 
@@ -376,8 +382,93 @@ header {
 /* -------------------------------------------------- */
 /* SIGNUP SECTION */
 /* -------------------------------------------------- */
+.section-plans {
+  background-color: #f4f4f4;
+}
 
+.plan-box {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
 
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+  background-color: #fafafa;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+
+.plan-price span {
+  font-size: 33%;
+  font-weight: 300;
+}
+
+.plan-price-meal {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0px;
+  color: #333;
+}
+
+/* -------------------------------------------------- */
+/* FORM SECTION */
+/* -------------------------------------------------- */
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: 1px solid #e67e22;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER SECTION */
+/* -------------------------------------------------- */
 
 
 
